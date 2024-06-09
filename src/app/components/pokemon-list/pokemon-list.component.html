@@ -1,0 +1,14 @@
+<div *ngIf="!loaded" class="spinner_overlay">
+    <mat-spinner></mat-spinner>
+</div>
+<h1>Pokemons!</h1>
+<div class="buttons">
+    <button id="card" [disabled]="!table" mat-icon-button (click)="cardView()">
+        <mat-icon>grid_view</mat-icon>
+    </button>
+    <button id="grid" [disabled]="table" mat-icon-button (click)="gridView()">
+        <mat-icon>view_list</mat-icon>
+    </button>
+</div>
+<app-card *ngIf="!table" [item]="pokemons"></app-card>
+<app-grid *ngIf="table" [item]="pokemons"></app-grid>

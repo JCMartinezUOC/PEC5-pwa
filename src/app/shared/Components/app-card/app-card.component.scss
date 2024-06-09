@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 50px;
+}
+
+mat-card {
+    max-width: 400px;
+    cursor: pointer;
+  }
+
+mat-card-content {
+    color: grey;
+}
