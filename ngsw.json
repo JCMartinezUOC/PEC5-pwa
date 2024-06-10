@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1718055721368,
+  "index": "/PEC5-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC5-pwa/favicon.ico",
+        "/PEC5-pwa/index.html",
+        "/PEC5-pwa/main.32235ca44173fefa.js",
+        "/PEC5-pwa/manifest.webmanifest",
+        "/PEC5-pwa/polyfills.5cf59fab880bd525.js",
+        "/PEC5-pwa/runtime.f393a385d2822e27.js",
+        "/PEC5-pwa/styles.e06a9809e0fa01f5.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC5-pwa/assets/icons/icon-128x128.png",
+        "/PEC5-pwa/assets/icons/icon-144x144.png",
+        "/PEC5-pwa/assets/icons/icon-152x152.png",
+        "/PEC5-pwa/assets/icons/icon-192x192.png",
+        "/PEC5-pwa/assets/icons/icon-384x384.png",
+        "/PEC5-pwa/assets/icons/icon-512x512.png",
+        "/PEC5-pwa/assets/icons/icon-72x72.png",
+        "/PEC5-pwa/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "pokemons-api",
+      "patterns": [
+        "https:\\/\\/pokeapi\\.co\\/api\\/v2\\/pokemon\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 2000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/PEC5-pwa/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/PEC5-pwa/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/PEC5-pwa/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/PEC5-pwa/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/PEC5-pwa/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/PEC5-pwa/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/PEC5-pwa/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/PEC5-pwa/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/PEC5-pwa/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/PEC5-pwa/index.html": "2ae976ad15ff9280fdcada46dbdc1b6f6732b287",
+    "/PEC5-pwa/main.32235ca44173fefa.js": "b0910a67f105d3803ad738d5eb3b0c825189973c",
+    "/PEC5-pwa/manifest.webmanifest": "6cbc5b5a5e46a69ef8dbfe17a8105811314e7663",
+    "/PEC5-pwa/polyfills.5cf59fab880bd525.js": "d346b0386e94f86f693fee22afdd3e57dbf7e558",
+    "/PEC5-pwa/runtime.f393a385d2822e27.js": "cb249a0381b4a060aab70e12c468fc879f79a9b7",
+    "/PEC5-pwa/styles.e06a9809e0fa01f5.css": "678cadd702d0344fe9bcdd18725c36697210f248"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
